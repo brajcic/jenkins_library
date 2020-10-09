@@ -9,6 +9,8 @@ def gitClone() {
 }
 
 void createBranch() {
-    def command = "git checkout -b BranchName"
-    command.execute()
+    def git_url = "https://github.com/brajcic/groovy_test.git"
+    def command = "git ls-remote -h $git_url".execute()
+    def command_to_branch = "git checkout -b BranchName"
+    command_to_branch.execute()
 }
