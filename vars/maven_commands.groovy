@@ -1,3 +1,3 @@
 void  installMaven() {
-    def command = "mvn clean install".execute()
+    "mvn clean install".execute()
 }
