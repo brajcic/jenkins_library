@@ -1,3 +1,3 @@
-void  installMaven() {
-    "mvn clean install".execute()
+def  installMaven() {
+   println("mvn clean install".execute().toString())
 }
