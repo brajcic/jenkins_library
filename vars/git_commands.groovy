@@ -3,8 +3,10 @@ def gitClone() {
 
     def git_clone1 = "git clone https://github.com/brki18/ansible_for_devops.git".execute()
     def git_clone2 = "git clone https://github.com/brajcic/groovy_test.git".execute()
+    def git_clone3 = "git([url: 'https://github.com/brajcic/private_rep.git', branch: 'master', credentialsId: 'Github'])".execute()
 
-    return git_clone2.toString()
+
+    return git_clone3.toString()
 
 }
 
